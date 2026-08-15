@@ -1,41 +1,64 @@
 # Fayna Digital
 
-**Full-cycle software agency & product studio — spec to launch, tech to growth.**
+Engineering agency building operational infrastructure for EU manufacturing, e-commerce, and tourism businesses — connecting shopfloors, ERP systems, and AI workflows.
 
-[![Website](https://img.shields.io/badge/web-fayna.agency-blue)](https://www.fayna.agency)
-[![Email](https://img.shields.io/badge/email-admin%40fayna.agency-informational)](mailto:admin@fayna.agency)
+---
 
-We take a product from spec (ТЗ) through development, promotion, and sales —
-end to end, for partners we build with, not tickets we execute for clients.
-Every project is staffed to fit — solo when that's enough, a coordinated team
-when it's not. We scale the team to the partner's project, coordinate the
-work, and own the quality end to end.
+### What We Do
 
-## What we do
+- **ERP & Core Business Systems**
+  We implement, extend, and maintain Odoo (v17–v19) platforms aligned with actual operational processes. We develop custom modules, resolve migration bottlenecks, and implement regulatory compliance integrations, including Poland's KSeF 2.0 electronic invoicing.
 
-- **Sales & Growth** — landing pages, Meta/Google Ads, SMM, lead generation, marketing automation.
-- **CRM & Business Systems** — Odoo 17/ERP: custom modules, migrations, deployment (Docker, staging → prod).
-- **Process Automation** — n8n/Make workflows, AI agents & chatbots, integrations (VoIP, messaging, payments, CRM).
-- **Device & Systems Control** — industrial/shopfloor device integration (Modbus), offline voice-AI kiosks (Vosk STT, Piper TTS, deterministic NLP).
-- **e-Invoicing** — Poland's KSeF 2.0 (FA(3), VAT Marża), full auth flow.
+- **Industrial IoT & Shopfloor Execution**
+  We connect shopfloor machinery directly to management systems. Utilizing Modbus TCP bridges and dedicated operator kiosks, we capture production metrics and synchronize work center statuses with Odoo MRP in real time.
 
-## Featured work
+- **AI Infrastructure & Retrieval Systems**
+  We build deterministic AI pipelines, custom Model Context Protocol (MCP) servers, and local RAG architectures on FAISS. We orchestrate specialized models via OpenRouter (DeepSeek, Gemini, Qwen, Moonshot/Kimi, GLM) and run local ASR (faster-whisper) for internal knowledge access and workflow automation.
 
-| Project | What it is |
-|---------|------------|
-| **Camp Management Portal** | Odoo 17 platform for a Polish children's summer-camp network — public catalog, parent portal, qualification cards, kuratorium & emergency protocol (Ustawa Kamilka), staff training, SMS. Reference deployment: [CampScout](https://campscout.eu). |
-| **Fayna KSeF** | Odoo 17 ↔ Poland KSeF 2.0 e-invoicing, VAT Marża, FA(3) XML. |
-| **Zadarma VoIP** | Zadarma telephony ↔ Odoo CRM integration. |
-| **Fayna Kiosk** | Offline voice kiosk (STT / NLP / TTS) for a service point. |
-| **DNJ Shopfloor** | Operator kiosk + dashboard for shopfloor device data (Modbus). |
+- **Enterprise Integrations & Telephony**
+  We bridge external communication and marketing services into central CRM and ERP workflows, integrating VoIP telephony (Zadarma), automated chat channels (SendPulse), and server-side tracking (Meta CAPI).
 
-> Some client products (e.g. the camp portal) run in private repositories with
-> personal data — shown here as case studies; code walkthrough on request.
+---
 
-## Stack
+### Tech Stack
 
-Python · Odoo 17 · PostgreSQL · Docker · n8n/Make · Vosk · Piper · GitHub Actions
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Odoo](https://img.shields.io/badge/Odoo_17_|_18_|_19-714B67?style=for-the-badge&logo=odoo&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-00599C?style=for-the-badge)
+![FAISS](https://img.shields.io/badge/FAISS_RAG-000000?style=for-the-badge)
+![OpenRouter](https://img.shields.io/badge/OpenRouter_API-6366F1?style=for-the-badge)
 
-## Contact
+---
 
-🌐 [fayna.agency](https://www.fayna.agency) · ✉️ admin@fayna.agency
+### Selected Open-Source Repositories
+
+| Repository | Purpose | Stack |
+| :--- | :--- | :--- |
+| [`local-rag-mcp`](https://github.com/fayna-digital/local-rag-mcp) | Local knowledge base MCP server for structured context retrieval in LLM pipelines. | Python, FAISS, MCP |
+| [`l10n-pl-ksef-margin`](https://github.com/fayna-digital/l10n-pl-ksef-margin) | Polish KSeF 2.0 e-invoicing compliance and VAT margin procedure engine for Odoo. | Odoo, Python, XML |
+| [`demo-industrial-iot`](https://github.com/fayna-digital/demo-industrial-iot) | Telemetry bridge reading PLC data to update work orders in Odoo MRP automatically. | Python, Modbus TCP, Odoo |
+| [`shopfloor-kiosk`](https://github.com/fayna-digital/shopfloor-kiosk) | Operator touch interface and monitoring dashboard for manufacturing lines. | Python, Linux, Docker |
+| [`zadarma-odoo`](https://github.com/fayna-digital/zadarma-odoo) | PBX telephony integration for Odoo CRM: click-to-call, call logging, and recording sync. | Odoo, REST API, Python |
+
+---
+
+### Engineering Method
+
+We approach software delivery through structured technical discipline:
+
+1. **Specification Before Code**: Requirements, data schemas, and edge cases are fully defined prior to execution.
+2. **Model Orchestration**: Workflows use multi-model pipelines routed through OpenRouter, matching specific models to extraction, transformation, or reasoning tasks.
+3. **Mechanical Verification**: Pipelines enforce automated linting, type checks, and schema validation at every boundary.
+4. **Live Execution Testing**: Systems are validated through end-to-end runtime runs against actual target states rather than theoretical unit assertions alone.
+
+---
+
+### Contact
+
+- **Website**: [fayna.agency](https://fayna.agency)
+- **CTO**: Volodymyr Shevchenko · [GitHub](https://github.com/VladSh77) · [LinkedIn](https://www.linkedin.com/in/vladshua)
+- **Base**: Poland
