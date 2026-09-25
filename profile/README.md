@@ -38,11 +38,11 @@ Engineering agency building operational infrastructure for EU manufacturing, e-c
 
 | Repository | Purpose | Stack |
 | :--- | :--- | :--- |
-| [`local-rag-mcp`](https://github.com/fayna-digital/local-rag-mcp) | Local knowledge base MCP server for structured context retrieval in LLM pipelines. | Python, FAISS, MCP |
-| [`l10n-pl-ksef-margin`](https://github.com/fayna-digital/l10n-pl-ksef-margin) | Polish KSeF 2.0 e-invoicing compliance and VAT margin procedure engine for Odoo. | Odoo, Python, XML |
-| [`demo-industrial-iot`](https://github.com/fayna-digital/demo-industrial-iot) | Telemetry bridge reading PLC data to update work orders in Odoo MRP automatically. | Python, Modbus TCP, Odoo |
-| [`shopfloor-kiosk`](https://github.com/fayna-digital/shopfloor-kiosk) | Operator touch interface and monitoring dashboard for manufacturing lines. | Python, Linux, Docker |
-| [`zadarma-odoo`](https://github.com/fayna-digital/zadarma-odoo) | PBX telephony integration for Odoo CRM: click-to-call, call logging, and recording sync. | Odoo, REST API, Python |
+| [`fayna-rag-mcp`](https://github.com/fayna-digital/fayna-rag-mcp) | Local knowledge base MCP server for structured context retrieval in LLM pipelines. | Python, FAISS, MCP |
+| [`fayna-ksef-margin`](https://github.com/fayna-digital/fayna-ksef-margin) | Polish KSeF 2.0 e-invoicing compliance and VAT margin procedure engine for Odoo. | Odoo, Python, XML |
+| [`fayna-industrial-iot`](https://github.com/fayna-digital/fayna-industrial-iot) | Telemetry bridge reading PLC data to update work orders in Odoo MRP automatically. | Python, Modbus TCP, Odoo |
+| [`fayna-shopfloor-kiosk`](https://github.com/fayna-digital/fayna-shopfloor-kiosk) | Operator touch interface and monitoring dashboard for manufacturing lines. | Python, Linux, Docker |
+| [`fayna-zadarma-odoo`](https://github.com/fayna-digital/fayna-zadarma-odoo) | PBX telephony integration for Odoo CRM: click-to-call, call logging, and recording sync. | Odoo, REST API, Python |
 
 ---
 
